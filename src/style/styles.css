@@ -1,6 +1,8 @@
 body{
-    background-color: rgb(195, 185, 185);
+    background-color: rgba(251,240,223,255);
     font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 h1{
     font-weight: bold;
@@ -40,8 +42,12 @@ button:hover{
     grid-template-rows: 1fr 4fr;
     margin-left: 30px;
     margin-right: 20px;
+    margin-top: 20px;
     padding: 20px;
     align-items: center;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .homeTitle {
     grid-row: 1/2;
@@ -53,9 +59,12 @@ button:hover{
     grid-column: 2/3;
     display: flex;
     flex-direction: column;
-    
     padding: 0; 
     margin: 0;
+    background-color: rgb(240, 195, 129);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 15px;
 }
 .restImg {
     grid-row: 2/3;
@@ -74,16 +83,27 @@ button:hover{
     align-self: center;
     text-align: center;
     padding: 10px 40px 40px 40px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .textAbout{
     margin-top: 40px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: rgb(240, 195, 129);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 .menuCont{
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-top: 10px;
+    
+    padding: 40px 20px;
 }
 .titleMenu{
     margin-bottom: 50px;
@@ -94,33 +114,47 @@ button:hover{
     align-items: center;
     grid-template-rows: repeat(4, 1fr);
     gap: 30px; 
-    width: 50%;
-    justify-items: center;
+    width: 70%;
     margin: 0 auto; 
 }
 
 
 .foodImg {
-    width: 200px;
-    height: 150px;
+    width: 250px;
+    height: 200px;
     object-fit: cover;
     border-radius: 15px; 
 }
 
 .foodItem {
-    display: grid;
-    grid-template-columns: 220px auto; 
+    display: flex;
     align-items: center;
-    gap: 30px; 
-    width: 60%; 
-    margin: 0 auto;
-    padding: 10px 0; 
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 15px 25px;
+    transition: transform 0.2s ease;
 }
 
 .foodItem p {
     margin: 0;
     font-size: 20px; 
     font-weight: bold;
+    display: flex;
+    justify-content: space-between;
     text-align: left; 
+    
     flex: 1; 
+    background-color: rgb(240, 195, 129);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    padding: 20px;
+    border-radius: 15px;
+}
+.foodItem span.price {
+    font-size: 22px;
+    font-weight: bold;
+    color: #4d2716;
+    text-align: right;
 }

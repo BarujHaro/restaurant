@@ -39,7 +39,7 @@ function menu(){
         foodImg.className = "foodImg";
 
         const foodDes = document.createElement("p");
-        foodDes.textContent = `${food.name} ............ ${food.price}`;
+        foodDes.innerHTML = `${food.name} <span class="price">${food.price}</span>`;
         foodItem.appendChild(foodImg);
         foodItem.appendChild(foodDes);
 

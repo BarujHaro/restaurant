@@ -7,7 +7,6 @@ module.exports = {
   output: {
     filename: "main.js",
     path: path.resolve(__dirname, "dist"),
-    clean: true,
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -15,8 +14,7 @@ module.exports = {
     }),
   ],
   devServer: {
-    static: './dist',
-    port: 8080, 
+    watchFiles: ["./src/template.html"],
   },
   module: {
     rules: [
